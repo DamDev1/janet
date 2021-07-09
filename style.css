@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to right, #F907FC, #05D6D9);
+    box-sizing: border-box;
+}
+
+.mobileResponsive .sideBar{
+    padding: 1em;
+    background: #05D6D9;
+    width: 60%;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+}
+
+.mobileResponsive .sideBar .sideBarImg{
+    width: 8em;
+    height: 8em;
+    background: url(./img/janet.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobileResponsive .sideBar .nav{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.mobileResponsive .sideBar .nav a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.mobileResponsive .sideBar .nav a li{
+    padding: 20px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.mobileResponsive .sideBar .nav a li:hover{
+    background: rgba(218, 216, 216, 0.664);
+}
+
+.mobileResponsive .sideBar .nav a:nth-child(1) li{
+    background: rgba(218, 216, 216, 0.664);
+}
+
+.mobileResponsive .container{
+    background: white;
+    margin: 0.5em;
+    padding: 1em;
+    height: 100vh;
+}
+
+.container .top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .top .logo{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Inconsolata", sans-serif;
+    margin-top: 5px;
+}
+
+.container .toggle .toggleImg{
+    width: 2em;
+    height: 2em;
+    background: url(./img/bar.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
