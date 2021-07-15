@@ -15,17 +15,22 @@
 
     <div class="mobileResponsive">
         <div class="sideBar">
+            <a href="#" class="closetoggle">&times;</a>
+
             <div class="sideBarImg"></div>
 
             <ul class="nav">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>About</li></a>
-                <a href="#"><li>Portfolio</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a href="#" class="tabsButton" onclick="showTabs(0)" id="display"><li>Home</li></a>
+
+                <a href="#" class="tabsButton" onclick="showTabs(1)" id="display"><li>About</li></a>
+
+                <a href="#" class="tabsButton" onclick="showTabs(2)" id="display"><li>Portfolio</li></a>
+
+                <a href="#" class="tabsButton" onclick="showTabs(3)" id="display"><li>Contact</li></a>
             </ul>
 
         </div>
-        <div class="container">
+        <div class="container" id="style">
             <div class="top">
                 <div class="logo">Bankong Janet</div>
 
@@ -35,9 +40,63 @@
             </div>
 
             <div class="middle">
-                <h1>Hello World!</h1>
-                <p>Each morning when you wake up, play a few pump up songs before you start your day to get you going. You can listen to productivity music on Spotify to help you get going. By getting your mind in the right mindset, you can inch closer to motivating yourself. </p>
-                <button>my portfolio</button>
+                
+                <div id="home" class="tabContent">
+                    <h1>Hello World!</h1>                    
+                    <p>Don't mess with me am a bad girl. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni asperiores dolorem officia tempora officiis eum odio debitis quasi, eius sed perspiciatis vel quia odit excepturi ducimus doloribus non dolor esse.</p>
+                    <a href="#" class="tabsButton" onclick="showTabs(1)"><button>About Me</button></a>
+                </div>
+
+                <div id="about" class="tabContent">
+                    <h1>About Janet</h1>
+                    <p>Each morning when you wake up, play a few pump up songs before you start your day to get you going. You can listen to productivity music on Spotify to help you get going. By getting your mind in the right mindset, you can inch closer to motivating yourself. </p>
+                    <a href="#" class="tabsButton" onclick="showTabs(2)"><button>my portfolio</button></a>
+                </div>
+
+                <div id="photo" class="tabContent">
+                    <h1>Photo</h1>
+
+                    <div class="imgContainer">
+                        <div class="img"></div>
+                        <div class="img"></div>
+                        <div class="img"></div>
+                        <div class="img"></div>
+                    </div>
+
+                    <a href="#" class="tabsButton" onclick="showTabs(3)"><button>Contact Me</button></a>
+                </div>
+
+                <div id="contact" class="tabContent">
+                    <p>You can massage me at any f**king time Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui, nulla cum pariatur.</p>
+
+                    <div class="social">
+                        <a href="#" class="instagram">Instagram</a>
+                        <a href="#" class="facebook">Facebook</a>
+                        <a href="#" class="whatsapp">Whatsapp</a>
+                        <a href="#" class="twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wideScreen">
+        <div class="container">
+            <div class="leftside">
+
+                <div class="sideBarImg"></div>
+
+               <ul class="nav">
+
+                   <a href="#" class="tabsButton" onclick="showTabs(0)" id="display"><li>Home</li></a>
+
+                   <a href="#" class="tabsButton" onclick="showTabs(1)" id="display"><li>About</li></a>
+
+                   <a href="#" class="tabsButton" onclick="showTabs(2)" id="display"><li>Portfolio</li></a>
+
+                   <a href="#" class="tabsButton" onclick="showTabs(3)" id="display"><li>Contact</li></a>
+            </ul>
             </div>
         </div>
     </div>

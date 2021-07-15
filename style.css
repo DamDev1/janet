@@ -17,6 +17,16 @@ body{
     top: 0;
 }
 
+.closetoggle{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    text-decoration: none;
+    top: 30;
+    right: 20px;
+    color: black;
+}
+
 .mobileResponsive .sideBar .sideBarImg{
     width: 8em;
     height: 8em;
@@ -51,15 +61,11 @@ body{
     background: rgba(218, 216, 216, 0.664);
 }
 
-.mobileResponsive .sideBar .nav a:nth-child(1) li{
-    background: rgba(218, 216, 216, 0.664);
-}
-
 .mobileResponsive .container{
     background: white;
     margin: 0.5em;
     padding: 1em;
-    height: 100vh;
+    height: 105vh;
 }
 
 .container .top{
@@ -83,3 +89,153 @@ body{
     background-repeat: no-repeat;
 }
 
+.middle .tabContent{
+    display: none;
+}
+
+.middle #home{
+    text-align: center;
+    margin-top: 20%;
+    font-family: "consolas", sans-serif;
+}
+
+.middle #home p{
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+.middle #home button{
+    padding: 10px 50px;
+    margin-top: 40px;
+    border-radius: 30px;
+    border: none;
+    background: #917BEA;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.middle #about{
+    text-align: center;
+    margin-top: 20%;
+    font-family: "consolas", sans-serif;
+}
+
+.middle #about p{
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+.middle #about button{
+    padding: 10px 50px;
+    margin-top: 40px;
+    border-radius: 30px;
+    border: none;
+    background: #917BEA;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.middle #photo{
+    text-align: center;
+    margin-top: 10%;
+    font-family: "consolas", sans-serif;
+}
+
+.imgContainer{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.imgContainer .img{
+    width: 40vw;
+    height: 30vw;
+    background: red;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img:hover{
+    background: gold;
+    opacity: 1;
+}
+
+.middle #photo button{
+    padding: 10px 50px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    background: rgb(253, 178, 191);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.middle #contact{
+    text-align: center;
+    margin-top: 10%;
+    font-family: "consolas", sans-serif;
+}
+
+.social{
+    margin-top: 50px;
+}
+
+#contact a{
+    display: block;
+    text-decoration: none;
+    background: gray;
+    margin: 10px;
+    padding: 45px;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border-radius: 10px;
+}
+
+
+@media(min-width: 700px){
+    .mobileResponsive{
+        display: none;
+    }
+
+    body{
+       
+        box-sizing: border-box;
+    }
+
+    .wideScreen{
+        background: linear-gradient(to right, #F907FC, #05D6D9);
+        width: 100%;
+        height: 100vh;
+    }
+
+    .wideScreen .container{
+        width: 96%;
+        height: 100vh;
+        background: white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .wideScreen .container .leftside{
+        background: rgba(206, 203, 203, 0.658);
+        width: 30%;
+        height: 100vh;
+        padding: 1em;
+
+    }
+}
