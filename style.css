@@ -225,6 +225,7 @@ body{
         background: linear-gradient(to right, #F907FC, #05D6D9);
         width: 100%;
         height: 100vh;
+        display: block;
     }
 
     .wideScreen .container{
