@@ -206,6 +206,10 @@ body{
     border-radius: 10px;
 }
 
+.wideScreen{
+    display: none;
+}
+
 
 @media(min-width: 700px){
     .mobileResponsive{
