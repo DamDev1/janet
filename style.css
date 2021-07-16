@@ -223,24 +223,121 @@ body{
 
     .wideScreen{
         background: linear-gradient(to right, #F907FC, #05D6D9);
-        width: 100%;
-        height: 100vh;
         display: block;
+        padding: 0.5em;
     }
 
     .wideScreen .container{
-        width: 96%;
-        height: 100vh;
         background: white;
         margin-left: auto;
         margin-right: auto;
+        display: flex;
+        justify-content: space-between;
     }
 
     .wideScreen .container .leftside{
-        background: rgba(206, 203, 203, 0.658);
-        width: 30%;
-        height: 100vh;
-        padding: 1em;
+        background: rgba(201, 198, 198, 0.658);
+        width: 50%; 
+        height: 100vh; 
+        padding: 10px;
+    }
 
+    .wideScreen .container .leftside .sideBarImg{
+        width: 10vw;
+        height: 10vw;
+        background: url("./img/janet.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+    }
+
+    .brand{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: "Inconsolata", sans-serif;
+    }
+
+    ul{
+        background: rgba(168, 168, 168, 0.219);
+        height: 18vw;
+        
+        margin-top: 50px;
+        line-height: normal;
+    }
+
+    ul a{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    ul a li{
+        padding: 15px;
+        font-family: "Roboto", sans-serif;
+        margin-top: 10px;
+    }
+
+    ul a:nth-child(1) li{
+        background: rgba(131, 131, 130, 0.39);
+    }
+
+    .right{
+        margin-top: 5%;
+    }
+
+    .right .tabText:nth-child(1) h1{
+        text-align: center;
+        font-family: "consolas", sans-serif;
+        font-size: 40px;
+    }
+
+    .right .tabText:nth-child(1) p{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 1px;
+        line-height: 35px;
+    }
+
+
+    .right .tabText:nth-child(2),
+    .right .tabText:nth-child(3),
+    .right .tabText:nth-child(4){
+        display: none;
+    }
+
+    .right .tabText:nth-child(1) button{
+        padding: 10px 50px;
+        margin-top: 40px;
+        border-radius: 30px;
+        border: none;
+        background: #917BEA;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        margin-left: 10%;
+        cursor: pointer;
+    }
+
+    .design{
+        width: 50vw;
+        height: 20vw;
+        background: url("./img/sharp.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 0px;
+        margin-top: em;
+        margin-left: auto;
+        margin-right: 0px;
     }
 }

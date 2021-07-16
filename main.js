@@ -30,8 +30,7 @@ function showTabs(tabsIndex, colorCode){
     tabsButton.forEach(function(show){
         show.style.background = "";
     });
-    tabsButton[tabsIndex].style.background = "green";
-    tabsButton[tabsIndex].style.color = "white";
+    
 
     tabContent.forEach(function(show){
         show.style.display = "none"
